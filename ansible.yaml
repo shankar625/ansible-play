@@ -1,0 +1,9 @@
+---
+ - hosts: 192.168.56.2
+   tasks:
+    - name: apache2 install
+      apt: name=apache2 state=present
+    - name: update
+      apt:
+        update_cache: yes
+
